@@ -19,7 +19,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         pressButton.isEnabled = false
         txtField.delegate = self // Set the delegate
         updateButtonAppearance()
-        printHelloWorld()
     }
     
     @IBAction func buttonTapped(_ sender: Any) {
@@ -32,10 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         txtLbl.text = text
         updateButtonAppearance()
     }
-    
-    func printHelloWorld() {
-        print("Hello, World!")
-    }
+
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         // Calculate the new text length
